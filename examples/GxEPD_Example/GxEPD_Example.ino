@@ -6,7 +6,7 @@
 // According to the board, cancel the corresponding macro definition
 // #define LILYGO_T5_V213
 // #define LILYGO_T5_V22
-// #define LILYGO_T5_V24
+#define LILYGO_T5_V24
 // #define LILYGO_T5_V28
 // #define LILYGO_T5_V102                           
 // #define LILYGO_T5_V266
@@ -29,7 +29,7 @@
 // #include <GxGDGDEW0102T4/GxGDGDEW0102T4.h> //1.02" b/w
 // #include <GxGDEW0154Z04/GxGDEW0154Z04.h>  // 1.54" b/w/r 200x200
 // #include <GxGDEW0154Z17/GxGDEW0154Z17.h>  // 1.54" b/w/r 152x152
-// #include <GxGDEH0154D67/GxGDEH0154D67.h>  // 1.54" b/w
+#include <GxGDEH0154D67/GxGDEH0154D67.h>  // 1.54" b/w
 // #include <GxDEPG0150BN/GxDEPG0150BN.h>    // 1.51" b/w   form DKE GROUP
 // #include <GxDEPG0266BN/GxDEPG0266BN.h>    // 2.66" b/w   form DKE GROUP
 // #include <GxDEPG0290R/GxDEPG0290R.h>      // 2.9" b/w/r  form DKE GROUP
@@ -262,6 +262,9 @@ void showFont(const char name[], const GFXfont *f)
     display.println("PQRSTUVWXYZ[\\]^_");
     display.println("`abcdefghijklmno");
     display.println("pqrstuvwxyz{|}~ ");
+    display.println();
+    display.println("AIR AILE!");
+    display.println("GNU VARIO");
     display.update();
     delay(5000);
 }
